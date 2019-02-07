@@ -1,0 +1,33 @@
+# Copy and edit this file with your informatin
+
+# AWS Credentials
+aws_access_key = "YourAWSAccessKey"
+aws_secret_key = "YourAWSSecretKey"
+
+# Namespace, which could be your organization name or abbreviation, e.g. "co" or "company"
+namespace = "co"
+# Stage, e.g. "prod", "staging", "dev"
+stage = "prod"
+
+# Where to deploy the infrastructure
+region = "us-east-1"
+vpc = "vpc-xxxxxxxx"
+master_subnet = "subnet-xxxxxxxx"
+slave_subnet = "subnet-yyyyyyyy"
+
+# Version to install (5.0.x)
+version = "5.0.3"
+
+# Redis instance type
+instance_type = "m5.large"
+
+# How many nodes for master and slaves. Actual deploy will use 2 * cluster_size instances.
+cluster_size = 3
+
+# Root volume size for the instances
+storage_size = 60
+
+# Allow loggin in the instance using you ssh key pair. The private key
+# will be used by Ansible to manage the instances.
+# https://console.aws.amazon.com/ec2/v2/home?#KeyPairs
+ssh_key_pair = "terraform"
