@@ -7,7 +7,7 @@ aws_secret_key = "YourAWSSecretKey"
 # Namespace, which could be your organization name or abbreviation, e.g. "co" or "company"
 namespace = "co"
 # Stage, e.g. "prod", "staging", "dev"
-stage = "prod"
+stage = "dev"
 
 # Where to deploy the infrastructure
 region = "us-east-1"
